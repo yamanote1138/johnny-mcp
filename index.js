@@ -1,6 +1,6 @@
 const mcpadc = require('mcp-spi-adc');
 
-const potentiometer = mcpadc.open(5, {speedHz: 20000}, err => {
+const potentiometer = mcpadc.open(1, {speedHz: 20000}, err => {
   if (err) throw err;
 
   setInterval(_ => {
